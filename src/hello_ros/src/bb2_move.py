@@ -25,7 +25,6 @@ def move():
         
         t2 = rospy.Time.now().to_sec()
         
-    
         print(t2-t1)
         if t2-t1 > 10:
             setVel(0, 0)
