@@ -12,7 +12,6 @@ def setVel(vel_lx, vel_az):
 def move():
     rospy.init_node('robot_bb8', anonymous=True)
     
-
     vel_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
     
     setVel(0.3, 0.1)
@@ -34,10 +33,6 @@ def move():
             break
         rospy.sleep(1)
         
-        
-
-
-
 if __name__ == "__main__":
     try:
         move()
